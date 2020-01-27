@@ -318,19 +318,16 @@ class WordListTreeClassNoShare : WordList {
     }
 }
 
-class WordListTreeData : WordList {
+struct WordListTreeData : WordList {
     
     var _data:[UInt32]? = nil
     var _tree:WordListTreeClass? = nil
     
-    required init() {
-    }
-    
-    func beginUpdate() {
+    mutating func beginUpdate() {
         assert(_tree == nil)
         _tree = WordListTreeClass()
     }
-    func endUpdate() {
+    mutating func endUpdate() {
         assert(_tree != nil)
         _data = tree_data(_tree!)
         _tree = nil
@@ -342,7 +339,7 @@ class WordListTreeData : WordList {
             return contains(data, $0)
         }
     }
-    func add(_ word: String) {
+    mutating func add(_ word: String) {
         assert(_tree != nil)
         _tree?.add(word)
     }
