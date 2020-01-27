@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF03EB6E23D9783800BDABB2 /* WordListArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03EB6D23D9783800BDABB2 /* WordListArray.swift */; };
+		EF03EB7023DA796800BDABB2 /* WordListDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03EB6F23DA796800BDABB2 /* WordListDictionary.swift */; };
+		EF03EB7223DB92C200BDABB2 /* WordListArrayPacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03EB7123DB92C200BDABB2 /* WordListArrayPacked.swift */; };
+		EF03EB7423DBBCA300BDABB2 /* WordListTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03EB7323DBBCA300BDABB2 /* WordListTree.swift */; };
 		EF4627B523CD351B001C33D3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4627B423CD351B001C33D3 /* main.swift */; };
+		EF4627BC23CD354B001C33D3 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4627BB23CD354B001C33D3 /* WordList.swift */; };
+		EF4627BE23CD45AE001C33D3 /* WordListSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4627BD23CD45AE001C33D3 /* WordListSet.swift */; };
+		EF4627C023CD47E6001C33D3 /* WordListNull.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4627BF23CD47E6001C33D3 /* WordListNull.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +30,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF03EB6D23D9783800BDABB2 /* WordListArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListArray.swift; sourceTree = "<group>"; };
+		EF03EB6F23DA796800BDABB2 /* WordListDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListDictionary.swift; sourceTree = "<group>"; };
+		EF03EB7123DB92C200BDABB2 /* WordListArrayPacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListArrayPacked.swift; sourceTree = "<group>"; };
+		EF03EB7323DBBCA300BDABB2 /* WordListTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListTree.swift; sourceTree = "<group>"; };
 		EF4627B123CD351B001C33D3 /* WordList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WordList; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF4627B423CD351B001C33D3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EF4627BB23CD354B001C33D3 /* WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
+		EF4627BD23CD45AE001C33D3 /* WordListSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListSet.swift; sourceTree = "<group>"; };
+		EF4627BF23CD47E6001C33D3 /* WordListNull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListNull.swift; sourceTree = "<group>"; };
+		EFF40DFE23DF5C9200479A99 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +56,7 @@
 		EF4627A823CD351B001C33D3 = {
 			isa = PBXGroup;
 			children = (
+				EFF40DFE23DF5C9200479A99 /* README.md */,
 				EF4627B323CD351B001C33D3 /* WordList */,
 				EF4627B223CD351B001C33D3 /* Products */,
 			);
@@ -57,6 +73,13 @@
 		EF4627B323CD351B001C33D3 /* WordList */ = {
 			isa = PBXGroup;
 			children = (
+				EF4627BB23CD354B001C33D3 /* WordList.swift */,
+				EF4627BF23CD47E6001C33D3 /* WordListNull.swift */,
+				EF4627BD23CD45AE001C33D3 /* WordListSet.swift */,
+				EF03EB6F23DA796800BDABB2 /* WordListDictionary.swift */,
+				EF03EB6D23D9783800BDABB2 /* WordListArray.swift */,
+				EF03EB7123DB92C200BDABB2 /* WordListArrayPacked.swift */,
+				EF03EB7323DBBCA300BDABB2 /* WordListTree.swift */,
 				EF4627B423CD351B001C33D3 /* main.swift */,
 			);
 			path = WordList;
@@ -120,7 +143,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4627C023CD47E6001C33D3 /* WordListNull.swift in Sources */,
+				EF4627BE23CD45AE001C33D3 /* WordListSet.swift in Sources */,
+				EF03EB7223DB92C200BDABB2 /* WordListArrayPacked.swift in Sources */,
 				EF4627B523CD351B001C33D3 /* main.swift in Sources */,
+				EF4627BC23CD354B001C33D3 /* WordList.swift in Sources */,
+				EF03EB7423DBBCA300BDABB2 /* WordListTree.swift in Sources */,
+				EF03EB6E23D9783800BDABB2 /* WordListArray.swift in Sources */,
+				EF03EB7023DA796800BDABB2 /* WordListDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +276,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8RUN83V8CA;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -257,7 +289,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8RUN83V8CA;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
