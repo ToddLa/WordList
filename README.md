@@ -90,6 +90,8 @@ TESTING: WordListTreeData 466,551 words
     Query Time: 0.490 μs
 ```
 
+## Summary
+The PackedArray and PackedTree use the least memory (9MB and 6MB) but are 2-3x slower look up than the system Set/Dictionary! 
 
 
 ## All Results
