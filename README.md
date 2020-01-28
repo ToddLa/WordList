@@ -58,29 +58,28 @@ TESTING: WordListTreeClassNoShare 466,551 words
 the packed Data format is an array of UInt32, offsets are relative to the start of the current tree. offsets are sorted by the character values. 8bits for character, 1bit for EOL, 23bits for offset
 
 ```
-//
-// +----+-+--------------------+
-// |char|0|   offset to child 1|
-// +----+-+--------------------+
-// |char|0|   offset to child 2|
-// +----+-+--------------------+
-//          ......
-// +----+-+--------------------+
-// |char|1|   offset to child N|
-// +---------------------------+
-// |     data for child 1      |
-// +---------------------------+
-// |     data for child 2      |
-// +---------------------------+
-//          ......
-// +---------------------------+
-// |     data for child N      |
-// +---------------------------+
-//
-// special values
-// +----+-+--------------------+
-// |char|x|  0x000000          |  - leaf/empty node
-// +----+-+--------------------+
++----+-+--------------------+
+|char|0|   offset to child 1|
++----+-+--------------------+
+|char|0|   offset to child 2|
++----+-+--------------------+
+         ......
++----+-+--------------------+
+|char|1|   offset to child N|
++---------------------------+
+|     data for child 1      |
++---------------------------+
+|     data for child 2      |
++---------------------------+
+         ......
++---------------------------+
+|     data for child N      |
++---------------------------+
+
+special values
++----+-+--------------------+
+|char|x|  0x000000          |  - leaf/empty node
++----+-+--------------------+
 ```
 
 ```
